@@ -8,11 +8,17 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
-
+    const preco = Number(prompt(`informe o preco`))
+    let novoPreco;
 
     //Processamento
+    (preco <= 280) ? novoPreco = preco * 1.2
+    : (preco <= 700) ? novoPreco = preco * 1.15
+    : (preco <= 1500) ? novoPreco = preco * 1.1
+    : percentualAumento = novoPreco = preco * 1.05;
 
-    
+    alert(`o seu novo preco e ${novoPreco}`)
+
     //Saída
 
 </script>
