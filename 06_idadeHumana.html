@@ -8,7 +8,16 @@
     // - cães grandes: fator 7.
 
     //Entrada
+const idadeCao = Number(prompt("informe a idade do seu cao"));
+const porteCao = prompt("informe o porte do cao : p- pequeno, m- medio, g- grande.-").toLowerCase();
 
+let idadeHumana;
+(porteCao === "p")? idadeHumana = idadeCao * 5
+:(porteCao === "m")? idadeHumana = idadeCao * 6
+: idadeHumana = idadeCao * 7 ;
+
+
+ document.write(` a idade do cao em idade humana e ${idadeHumana}`);
 
     //Processamento
 
